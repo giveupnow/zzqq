@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="15dp"
+    android:background="#e3e3e3"
+    tools:context=".SecondActivity">
+
+    <ImageButton
+        android:id="@+id/ivimg"
+        android:layout_width="213dp"
+        android:layout_height="285dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/img" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ivimg"
+        android:id="@+id/table"
+        android:background="#fff"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1"
+        >
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/row1" >
+            <TextView android:id="@+id/tvUser" android:layout_width="60dp"
+                android:layout_height="wrap_content" android:textSize="18sp" android:text="用户"/>
+            <EditText android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:id="@+id/edUser"/>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/row2" >
+            <TextView android:id="@+id/tvPassword" android:layout_width="60dp"
+                android:layout_height="wrap_content" android:textSize="18sp" android:text="密码"/>
+            <EditText android:layout_height="wrap_content" android:layout_width="match_parent"
+                android:id="@+id/edPassword"
+                android:inputType="textPassword"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#a7157c"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:text="登录"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="60dp"
+        />
+
+
+
+</RelativeLayout>
